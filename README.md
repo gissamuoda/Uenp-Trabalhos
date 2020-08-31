@@ -1,2 +1,2 @@
-# Trabalhos das aulas 
-Repositório para armazenar trabalhos da faculdade
+#Uenp-Trabalhos 
+Repositório para armazenar códigos da faculdade
