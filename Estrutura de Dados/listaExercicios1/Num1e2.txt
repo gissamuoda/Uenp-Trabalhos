@@ -1,0 +1,6 @@
+1) Estrutura de dados é uma forma estruturada de armazenamento/manipulação de dados em uma memória de computador. Sua utilidade é que é possível 
+
+2) O tipo primitivo são tipos de dados não divisíveis como int, float, double, entre outros. 
+Os dados abstratos são compostos de dados do tipo primitivo e ele também pode possuir métodos, exemplo uma string, que é um vetor de caracteres
+
+

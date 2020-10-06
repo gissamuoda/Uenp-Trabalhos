@@ -1,0 +1,75 @@
+12_
+a) Ela possui um ponteiro, este que seria o topo, indicando qual seria o topo dessa pilha
+
+b)O método de remoção daria a retirada do elemento em que topo aponta como sendo o topo da pilha, tendo ela retornando o elemento retirado.
+	public No desempilha(){
+        	if(topo != -1){
+            		No temp = pilha[topo];
+            		topo = topo-1;
+            		System.out.println("Removido com sucesso"+temp.toString());
+           		return temp;
+        	}else{
+            		System.out.println("Pilha vazia...");
+            		return null;
+        }
+    }
+
+  O método de inserção ocorre a inserção na posição em que ponteiro topo aponta. 
+	public void empilha(No n){
+        	if(topo == -1 || topo < this.TAM-1){
+            		topo = topo + 1;
+            		pilha[topo] = n;
+            	}else{
+            		System.out.println("Pilha cheia...");
+       		}
+    	}
+
+c) O método de imprimir uma pilha começa por onde o topo aponta, indo até a posição zero 
+	public void printPilha(){
+        	for(int i = topo; i >= 0; i--){
+            		System.out.println(i+" - "+pilha[i].toString());
+        	}
+    	}
+
+
+
+13_
+a) São dois ponteiros, um indicando o final da fila e eutro indicando o inicio da fila
+
+b) O processo de remoção na fila ocorre no elemento que o ponteiro inicio indica, sendo realizado o deslocamento dois demais valores.
+	public No remove(){
+        	if(this.inicio != -1){
+            		No temp = fila[inicio];
+            		for(int i = inicio; i < final; i++){
+                        	fila[i] = fila[i+1];
+            		}
+            		fila[final] = null;
+            		final = final -1;
+            		System.out.println("Removido com sucesso"+temp.toString());
+            		return temp;
+        	}else{
+            		System.out.println("Lista vazia...");
+            		return null;
+        	}
+    	}
+
+O método se inserção ocorre sempre na posição que o ponteiro final indica
+	public void insert(No n){
+        	if(inicio == -1){	
+            		inicio = 0;
+            		final = 0;    
+            		fila[final] = n;
+        	}else if(final < (TAM-1)){
+            		final++;
+            		fila[final] = n;
+        	}else{
+            		System.out.println("Fila cheia...");
+        	}
+    	}
+
+ c) Método de imprimir 
+	public void printFila(){
+        	for(int i = inicio; i <= final; i++){
+            		System.out.println(i+" - "+fila[i].toString());
+        	}
+    	}

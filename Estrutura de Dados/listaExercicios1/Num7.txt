@@ -1,0 +1,12 @@
+a) Os ponteiros numa lista tem o papel de controlar as posições de uma estrutura de dados, armazenando em seu conteúdo o "endereço" de uma estrutura.
+Uma forma que isso for implementado, seria como um valor inteiro que armazena a posição do ultimo elemento inserido na lista, por exemplo.
+
+b) Operações básicas: Inserir, Remoção, Alterar, Limpar lista, Busca
+
+c) Uma operação de inserção em uma lista é realizada:
+1. Veifica se a lista tem espaço disponível para inserir um novo elemento
+1. Localizar a posição de inserção desde novo elemento
+3. Incluir o elemento na lista
+4. Atualizar os ponteiros da lista
+
+d) Um Nó é o objeto que será manipulado dentro da lista, esta que pode conter mais de um objeto Nó dentro dela. 
