@@ -1,0 +1,14 @@
+1. 
+Para impedir que um método ser sobrescrito pode ser usado o modificador "final". Ficando dessa forma:
+    public final void metodo(){
+        <...> 
+    }
+E para impedir que uma classe seja herdada também é utilizada o modificador "final". Ex: 
+    public final class Classe{
+        <...>
+    }
+
+2. 
+Porque quando referenciada a um objeto qualquer ele irá imprimir o endereço desse objeto na memória. 
+Já quando referenciada a uma String, a string em si é passada para o método e assim podendo ser printada na tela 
+
