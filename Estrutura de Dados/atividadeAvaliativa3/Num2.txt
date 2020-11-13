@@ -1,0 +1,8 @@
+2. 
+    Na interface, os métodos são por natureza abstratos, as variáveis 
+    implementadas nele são por padrão final, os métodos são publicos e abstratos, 
+    deve ser implementada usando a palavra chave "implements" e uma classe pode 
+    implementar várias interfaces. Já uma classe abstrata ela pode conter uma 
+    quantidade maior de tipos de variáveis, pode ter métodos com diferentes 
+    controles de acesso, deve-se usar a palavra "extends" para implementá-la 
+    sendo que uma classe pode estender apenas uma classe abstrata por vez.

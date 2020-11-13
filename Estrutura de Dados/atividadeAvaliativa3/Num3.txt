@@ -1,0 +1,6 @@
+3. 
+    A diferença é que o modificador protect que faz com que o que estiver com esse 
+    modificador possa ser acessado apenas dentro da própria classe e por outra 
+    classe dentro do mesmo pacote. Se estiver em uma classe diferente não poderá 
+    ser chamado, a não ser que essa classe de um pacote diferente estenda essa 
+    classe que tem o método protect dessa forma conseguindo acessar esse método. 

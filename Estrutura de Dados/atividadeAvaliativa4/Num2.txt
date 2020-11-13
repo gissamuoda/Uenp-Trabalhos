@@ -1,0 +1,7 @@
+2. 
+    Uma vantagem seria a de tratar possíves erros de execução de alguma parte do código, fazendo assim com que possívelmente 
+    a execução so programa não se encerre, e também com esse tratamento, pode-se apresentar uma mensagem de uma forma mais amigavel 
+    a pessoa que possívelmente está fazendo algo errado em um software, assim sinalizando o possível erro, como caso uma pessoa digite 
+    errado o diretório em que o arquivo escolhido para ler, ou também uma das mais clássicas, caso coloque divisão por zero em uma 
+    programa calculadora. As desvantagem ficam por conta de ter noção quais erros podem acontecer na execução do código, já que existem diversos tipos de diferentes 
+    exceções.

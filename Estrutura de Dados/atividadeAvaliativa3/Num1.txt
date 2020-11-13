@@ -1,0 +1,11 @@
+1. 
+    
+A herança é um mecanismo para criar classes a partir de classes já existentes. A 
+sobreposição de método seria uma forma de se reescrever um método de uma classe 
+em outra através do "@Overrite". Classes abstratas são classes que servem com se 
+fosse um esqueleto para subclasses que estendes dela, possuindo também métodos 
+abstratos "sem corpo" que deverão ser implementados na subclasses.
+
+Elas servem como apoio para o polimorfismo já que podem ser usadas por ele. Pode 
+haver uma Classe Abstrata que tem três classes herdadas, em que em para cada 
+subclasse tem vários métodos e um deles é sobrescrito para cada classe.

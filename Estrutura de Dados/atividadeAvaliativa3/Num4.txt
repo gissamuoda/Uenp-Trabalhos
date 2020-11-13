@@ -1,0 +1,14 @@
+4. 
+    O método reset() pode ser implementado na interface ICharQ como método default 
+    já que dessa forma ela pode ser implementada na inteface e assim não seria 
+    necessário que as classes que implementam essa interface sobrescrever o método 
+    em seu código. Ficaria dessa forma: 
+
+    public interface ICharQ {
+        void put(char ch);
+        char get();
+
+        default void reset(){
+            //código do método 
+        }
+    }
