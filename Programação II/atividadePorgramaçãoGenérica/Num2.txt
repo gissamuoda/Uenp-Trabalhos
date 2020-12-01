@@ -1,0 +1,5 @@
+Não, Já que caso fosse to tipo Object, poderiam ser colocados diferentes tipos de elementos numa mesma lista 
+como por exemplo ter elementos to tipo String e Integer na mesma lista. 
+O tipo genérico aplicado na ArrayList seria mais para criar uma lista de determinado tipo, como por exemplo 
+criar uma arraylist do tipo string, assim podendo ter dentro apenas strings. Ela permite a reutilização de 
+código, já que quando se criar uma lista é especificado o tipo dela.
