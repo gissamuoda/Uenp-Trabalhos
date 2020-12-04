@@ -1,4 +1,4 @@
-package capitulo13.genericType.exercicio.Num1;
+package exercicios.atividade1_ProgramacaoGenerica.Num1;
 
 import java.util.ArrayList;
 
