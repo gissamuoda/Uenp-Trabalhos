@@ -12,25 +12,34 @@ public class ContFrequencia {
     }
 
     public void frequenciaPalavras(){
+        String splitedString[];
+        Integer oldValue = 0; 
+        Integer newValue = 0;
+        int equal = 0;
+
         for(int i = 0; i < this.splitingString.length; i++){
-            String splitedString[] = this.splitingString[i].split(" ");
-            for(int j = 1; j < splitedString.length; j++){
-                this.words.put(splitedString[0], 1);
+            splitedString = this.splitingString[i].split(" ");
+            for(int j = 0; j < splitedString.length; j++){
                 for(Map.Entry<String, Integer> entry: this.words.entrySet()){
-                    if (entry.getKey() == splitedString[j]){
-                        Integer newValue = entry.getValue()+1;
-                        this.words.replace(entry.getKey(), entry.getValue(), newValue);
-                    } else{
-                        this.words.put(splitedString[j], 1);
-                    }
+                    if (entry.getKey().equalsIgnoreCase(splitedString[j].toLowerCase())){
+                        oldValue = entry.getValue();
+                        newValue = (entry.getValue()+1);
+                        equal = 1;
+                    } 
                 }
+                if(equal == 1){
+                    this.words.replace(splitedString[j].toLowerCase(), oldValue, newValue);
+                }else{
+                    this.words.put(splitedString[j].toLowerCase(), 1);
+                }
+                equal = 0;
             }
         }
     }
 
     public void printWordsFrequency(){
-        for(Map.Entry<String, Integer> entryPrint : this.words.entrySet()){
-            System.out.println("key: "+entryPrint.getKey()+" | value: "+entryPrint.getValue());
+        for(Map.Entry<String, Integer> entry : this.words.entrySet()){
+            System.out.println("value: "+entry.getValue()+" | key: "+entry.getKey());
         }
     }
 }
