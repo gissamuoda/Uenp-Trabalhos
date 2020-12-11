@@ -21,7 +21,7 @@ public class ContFrequencia {
             splitedString = this.splitingString[i].split(" ");
             for(int j = 0; j < splitedString.length; j++){
                 for(Map.Entry<String, Integer> entry: this.words.entrySet()){
-                    if (entry.getKey().equalsIgnoreCase(splitedString[j].toLowerCase())){
+                    if (entry.getKey().equals(splitedString[j].toLowerCase())){
                         oldValue = entry.getValue();
                         newValue = (entry.getValue()+1);
                         equal = 1;
@@ -39,7 +39,15 @@ public class ContFrequencia {
 
     public void printWordsFrequency(){
         for(Map.Entry<String, Integer> entry : this.words.entrySet()){
-            System.out.println("value: "+entry.getValue()+" | key: "+entry.getKey());
+            System.out.println(entry.getKey()+" - "+entry.getValue());
         }
+    }
+
+    public void setSplitingString(String[] str){
+        this.splitingString = str;
+    }
+
+    public String[] getSplitingString() {
+        return this.splitingString;
     }
 }
