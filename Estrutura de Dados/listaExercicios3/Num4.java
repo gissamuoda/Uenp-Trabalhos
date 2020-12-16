@@ -20,7 +20,7 @@ public class Num4 {
         String testCase = tec.nextLine(); 
 
         long password = 0;  
-        long attempts = 00000;
+        long attempts = 0;
 
         switch (testCase) {
             case "y":
