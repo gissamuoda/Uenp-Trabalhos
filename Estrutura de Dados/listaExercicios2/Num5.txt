@@ -1,6 +1,0 @@
-5. 
-	Os tipos de estruturas ordenáveis são arrays, listas (encadeadas, duplamente encadeadas), entre outros.
-    Para queuma estrutura possa ser ordenável é apresentar dados em que possam ser colocados em alguma 
-    forma de ordem, como por exemplo, uma lista encadeada que apresenta como nó um nome, podendo assim 
-    ser ordenado pela ordem alfabética os nomes, ou como um array do tipo double, em que pode ser colocado 
-    em ordem crescente ou decrescente.
